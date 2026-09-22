@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Practical guides for Amazon product research: turn reviews into product requirements, deduplicate parent ASINs, pre-screen design patent risk, and build an auditable Go/No-Go decision.">
+  <meta name="keywords" content="Amazon product research guide, Amazon review analysis, parent ASIN deduplication, design patent risk, product Go No-Go decision, SellerSprite BI, voice of customer">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://pdben-auto.github.io/guides.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Amazon Product Research Guides | PDBen-Auto">
+  <meta property="og:description" content="Problem-oriented guides for evidence-driven Amazon product decisions.">
+  <meta property="og:url" content="https://pdben-auto.github.io/guides.html">
+  <meta property="og:image" content="https://pdben-auto.github.io/assets/evidence-demo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"CollectionPage",
+    "name":"Amazon Product Research Guides",
+    "url":"https://pdben-auto.github.io/guides.html",
+    "description":"Problem-oriented guides for review intelligence, SellerSprite market scope, design patent pre-screening, and product Go/No-Go decisions.",
+    "isPartOf":{"@type":"WebSite","name":"PDBen-Auto","url":"https://pdben-auto.github.io/"}
+  }
+  </script>
+  <title>Amazon Product Research Guides | PDBen-Auto</title>
+  <style>
+    :root{--bg:#f4f6f5;--surface:#fff;--ink:#17211b;--muted:#647068;--line:#d8dfda;--accent:#146b58;--soft:#e1f0eb;--navy:#22313b}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,"Segoe UI","Microsoft YaHei",Arial,sans-serif}a{color:var(--accent)}main{max-width:1060px;margin:auto;padding:34px 22px 60px}header{border-bottom:1px solid var(--line);padding-bottom:26px}.eyebrow{color:var(--accent);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}h1{font-size:38px;line-height:1.15;margin:8px 0}header p{max-width:800px;color:var(--muted);margin:0}.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.tag{background:var(--soft);border:1px solid #c3e0d6;padding:5px 9px;border-radius:5px;color:var(--navy);font-size:13px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:28px}.card{background:var(--surface);border:1px solid var(--line);padding:20px}.card h2{font-size:21px;line-height:1.25;margin:0 0 8px}.card p{color:var(--muted);margin:0 0 12px}.card ul{margin:0;padding-left:20px}.card li{margin:4px 0}.cta{display:inline-block;margin-top:12px;font-weight:700}.method{margin-top:28px;background:#eef5f2;border-left:4px solid var(--accent);padding:16px 18px}.method strong{display:block;margin-bottom:4px}footer{margin-top:34px;border-top:1px solid var(--line);padding-top:16px;color:var(--muted);font-size:13px}@media(max-width:680px){main{padding:24px 14px 42px}h1{font-size:30px}.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="eyebrow">PDBen-Auto / practical guides</div>
+    <h1>Four product-research questions that reports alone do not answer</h1>
+    <p>Use the guide that matches the evidence you already have. Each workflow keeps the source boundary visible, distinguishes facts from estimates, and ends with an artifact a product team can review.</p>
+    <div class="tags"><span class="tag">Amazon product research</span><span class="tag">Voice of Customer</span><span class="tag">SellerSprite BI</span><span class="tag">Design patent risk</span><span class="tag">Go / No-Go decision</span></div>
+  </header>
+  <section class="grid">
+    <article class="card"><h2>How do I turn Amazon reviews into product requirements?</h2><p>Start from written reviews, not only sentiment scores. Preserve review IDs, dates, variants, ratings, original text, and evidence limits before grouping recurring friction.</p><ul><li>Separate negative issues from positive purchase drivers.</li><li>Link every theme to supporting review records.</li><li>Translate the signal into product, packaging, fit, listing, and validation actions.</li></ul><a class="cta" href="cases/review-intelligence.html">Read the worked review case →</a></article>
+    <article class="card"><h2>How do I avoid inflating an Amazon market with duplicate ASINs?</h2><p>Keyword results are discovery evidence, not an automatic TAM. Define the market boundary, retain excluded candidates, require detailed-data coverage, and aggregate sibling listings at the parent ASIN level.</p><ul><li>Classify direct, adjacent, excluded, and review candidates.</li><li>Keep the denominator tied to the accepted scope.</li><li>Label SellerSprite values as third-party estimates.</li></ul><a class="cta" href="cases/sellersprite-bi.html">Read the SellerSprite BI case →</a></article>
+    <article class="card"><h2>How do I pre-screen design patent risk before tooling?</h2><p>A product name or image-similarity result is not enough. Read the complete drawing set, compare high-salience visual relationships, separate risk types, and make redesign directions testable.</p><ul><li>Explain what solid and broken lines appear to protect.</li><li>Change structure, silhouette, proportion, and component relationships.</li><li>Re-search the preferred concept before tooling.</li></ul><a class="cta" href="cases/design-patent.html">Read the design-around case →</a></article>
+    <article class="card"><h2>How do I build an auditable Amazon product Go/No-Go?</h2><p>Market demand, customer pain, supplier feasibility, unit economics, and cash constraints often arrive with different definitions. A typed evidence contract makes the handoff reviewable before a private decision engine is asked to score it.</p><ul><li>Validate required fields and reject sensitive data locally.</li><li>Bind the evidence bundle to a request hash.</li><li>Return a bounded handoff when the private engine is unavailable.</li></ul><a class="cta" href="cases/decision-gateway.html">Read the Gateway case →</a></article>
+  </section>
+  <div class="method"><strong>Shared method</strong> The public Skills are designed to compose: market scope → customer evidence → design/IP pre-screen → supplier and financial validation → signed decision handoff. Public examples are synthetic or redacted; the workflows do not include hidden telemetry, covert tracking, or backdoor behavior.</div>
+  <footer><a href="index.html">Back to the PDBen-Auto Skill collection</a> · <a href="https://github.com/PDBen-Auto/amazon-product-decision-suite">Open the Decision Gateway repository</a></footer>
+</main>
+</body>
+</html>
